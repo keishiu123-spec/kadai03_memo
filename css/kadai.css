@@ -1,0 +1,145 @@
+body{
+
+/* 全体の背景と基本設定 */
+    background-image: url("../gazou/haikei.png");
+    /* 背景魔法 */
+    background-size: cover;       /* 画面いっぱいに広げる */
+    background-position: center;  /* 画像の真ん中を表示 */
+    background-attachment: fixed; /* スクロールしても背景を動かさない */
+
+    /* 背景画像の設定 */
+    background-color: #2b2b2b;
+    color: #f0f0f0; 
+    font-family: 'Yu Mincho', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 画面の高さを100%確保 */
+}
+
+h1 { 
+    color: #d4ac6e; 
+    letter-spacing: 10px; 
+    margin-top: 100px; 
+    margin-bottom: 10px;
+}
+
+/* 入力項目の枠組み */
+.input-area {
+    background: #3e3e3e; 
+    width: 40%; 
+    padding: 10px;
+    margin: auto; 
+    border-radius: 10px; 
+    border: 1px solid #d4ac6e;
+}
+
+/* 入力項目のラベル */
+    .input-area p {
+        margin: 10px 0 5px;
+        font-weight: bold;
+        color: #d4ac6e;
+        text-align: left;
+    }
+
+    /* 入力欄 */
+input, textarea {
+    width: 90%;
+    padding: 5px; 
+    margin-bottom: 5px; 
+    background: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 15px;
+}
+
+/* ボタン */
+.btn-area {
+    margin-top: 2%;
+    display: flex;  /* 横並び魔法 */
+    justify-content: center;  /* 真ん中に寄せる魔法 */
+    gap: 20px; /* ボタン間隔 */
+}
+
+/* ulで囲って管理 */
+.btn-area li {
+    list-style: none; /* ・を消す */
+    cursor: pointer; /* マウス指マークの魔法 */
+    padding: 12px 40px; 
+    border: none; 
+    font-weight: bold; 
+    border-radius: 5px;
+}
+
+#save {
+    background: #f72f02;
+    color: #fdfcfc;
+}
+
+#clear {
+    background: #0521f3; 
+    color: #fbf9f9; }
+
+
+/* リスト全体の枠組み（表） */
+#list {
+    width: 90%; /* 横幅90%を使う */
+    max-width: 1000px; /* 最大幅1000px */
+    margin: 20px auto;
+    border-spacing: 0 10px;    /* 上下に10pxの隙間を空ける（カード風にする） */
+}
+
+/* 1行ごとの背景設定 */
+#list tr {
+    background-color: #141413;
+}
+
+/* 左側：銘柄（Key）のエリア */
+#list th {
+    width: 15%;           /* 横幅15%を使う */
+    color: #f63104;       /* 金色っぽい文字色 */
+    text-align: center;     /* 中央揃え */
+    padding: 15px;        /* 余白 */
+    border-radius: 10px 0 0 10px; /* 左側の角だけ丸くする */
+    vertical-align: middle;   /* 上下中央揃え */
+    font-size: 15px;      /* 文字 */
+}
+
+/* 右側：感想（Memo）のエリア */
+#list td:nth-child(2) {
+    width: 70%;           /* 横幅の70%を使う */
+    color: #f0f0f0;       /* 白文字 */
+    padding: 15px;        /* 余白 */
+    border-radius: 0 10px 10px 0; /* 右側の角だけ丸くする */
+    vertical-align: middle;
+    line-height: 1.6;     /* 文章を読みやすく行間を空ける */
+}
+
+/* 右側（削除ボタンエリア） */
+    .delete-cell {
+        width: 15%;
+        text-align: center;
+        border-radius: 0 10px 10px 0; /* 右端だけ丸く */
+        vertical-align: middle;
+    }
+
+    /* 削除ボタン本体 */
+    .delete-btn {
+        background: #cc3333; /* 赤色 */
+        color: white;
+        border: none;
+        padding: 5% 10px;
+        border-radius: 4px;
+        cursor: pointer;/* マウス指マークの魔法 */
+    }
+
+
+footer {
+    margin-top: 20px;
+    padding: 5px 0;
+    color: #f8f5f5;
+    font-size: 20px;
+}

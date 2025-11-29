@@ -6,7 +6,7 @@
 ⚫︎ 飲んだ日本酒をメモしていけるアプリです。
 
 ## ③アプリのデプロイURL
-
+⚫︎ https://keishiu123-spec.github.io/kadai03_memo/
 
 ## ④アプリのログイン用IDまたはPassword（ある場合）
 ⚫︎ なし
